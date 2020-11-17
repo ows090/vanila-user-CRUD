@@ -1,0 +1,42 @@
+.form-area {
+    display: flex;
+    height: 10vh;
+    background : goldenrod;
+    flex-direction: column;
+    font-size : 1.5rem;
+}
+
+.form-area [type="text"] {
+    flex : 1 1 0;
+    text-align : center;
+}
+
+.form-area [type="submit"] {
+    text-align: center;
+    flex : 1 1 0;
+}
+
+.user-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    border : 1px solid black;
+    padding : 1rem;
+}
+.user-list > * {
+    background : gold;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border : 3px solid transparent;
+}
+.user-list > *:hover {
+    border : 3px solid red;
+    transition: 1s;
+}
+
+
+
